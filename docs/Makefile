@@ -19,9 +19,9 @@ docs: $(patsubst %.md,%,$(wildcard *.[0-9].md))
 .PHONY: install
 install:
 	install -d ${DESTDIR}/${MANDIR}/man1
-	install -m 0644 *.1 ${DESTDIR}/${MANDIR}/man1
+	install -m 0644 *.1* ${DESTDIR}/${MANDIR}/man1
 	install -d ${DESTDIR}/${MANDIR}/man7
-	install -m 0644 *.7 ${DESTDIR}/${MANDIR}/man7
+	install -m 0644 *.7* ${DESTDIR}/${MANDIR}/man7
 
 .PHONY: clean
 clean:
